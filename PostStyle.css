@@ -1,0 +1,52 @@
+@font-face{
+    font-family:"k";
+    src:url(k.otf);
+}
+
+body{
+        background-color: #2962FF;
+        font-family: 'k', sans-serif;
+        color: white;
+        font-size: 20px;
+        height: 100%;
+}
+
+h1{
+    font-size: 55px;
+    margin-top: 30px;
+}
+
+i{
+    font-size: 30px;
+}
+
+
+.form-control{
+    font-size: 20px;
+    color: black;
+}
+
+ .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .navbar-nav  li a:hover {
+      color: black !important;
+      font-size: 30px;
+  }
+
+.form-control{
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btn-default{
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

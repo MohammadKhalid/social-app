@@ -1,0 +1,86 @@
+@font-face{
+    font-family:"k";
+    src:url(k.otf);
+}
+
+body{
+        background-color: #2962FF;
+        font-family: 'k', sans-serif;
+        color: white;
+        font-size: 20px;
+        height: 100%;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+i{
+    font-size: 30px;
+}
+
+ .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .navbar-nav  li a:hover {
+      color: black !important;
+      font-size: 30px;
+  }
+
+.form-control{
+    font-size: 20px;
+    color: black;
+}
+
+.btn-default{
+    border-radius: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.table-bordered td{
+    background-color: white;
+    color: black;
+}
+
+.table tbody tr > td.info {
+  background-color: #263238 !important;
+    color: white !important;
+}
+
+.table tbody tr > td.desc {
+  background-color: #37474F !important;
+    color: white !important;
+}
+
+.table tbody tr > td.other {
+  background-color: #B0BEC5 !important;
+    color: black !important;
+}
+
+.table tbody tr > td.people {
+  background-color: #CFD8DC !important;
+    color: black !important;
+}
+
+.table-bordered{
+     border: 3px solid white;
+     box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+p{
+    font-size: 20px;
+}
+
+.green{
+    color: #D50000;
+}

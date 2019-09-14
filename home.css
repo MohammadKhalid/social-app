@@ -1,0 +1,80 @@
+.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 20px;
+      letter-spacing: 5px;
+      background-color: white;
+}
+
+.navbar-nav  li a:hover {
+      color: #1abc9c !important;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+
+@font-face{
+    font-family:"JosefinSans-Bold";
+    src:url(JosefinSans-Bold.ttf);
+}
+
+@font-face{
+    font-family:"Myriad-Pro-Light";
+    src:url(Myriad-Pro-Light.ttf);
+}
+
+@font-face{
+    font-family:"segoe_ui";
+    src:url(segoe_ui.ttf);
+}
+
+
+body{
+        background-color: #0D47A1;
+        font-family: 'JosefinSans-Bold', sans-serif;
+        color: white;
+}
+
+.bg-1{
+    background-color: #D32F2F;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 9px 10px 11px;
+    text-decoration: none;
+    color:  black;
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 25px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    margin-top: 55px;
+      -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+    border: 1px solid #1A237E;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+button[type=submit]:hover{
+    background-color: #1A237E;
+}
+
+.home-heading{
+    margin-top: 50px;
+   font-family:"segoe_ui";
+    font-size: 55px;
+}

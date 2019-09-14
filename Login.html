@@ -1,0 +1,176 @@
+<html>
+
+    <head> </head>
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href="Bootstrap/css/bootstrap-theme.min.css">
+    <link rel = "stylesheet" href = "Bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+     <script src = "Bootstrap/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href= "loginstyle.css">
+    <link rel="stylesheet" href="animate.css">
+    
+    <script>
+        
+        $(document).ready(function(){ 
+            $("#notRegistered").click(function () {
+                $('#login_form').fadeOut(600);
+                $("#register_form").delay(600).fadeIn(600);
+            });
+            
+            $("#Registered").click(function () {
+                $('#register_form').fadeOut(600);
+                $("#login_form").delay(600).fadeIn(600);
+            });
+            
+            
+            $('#name').blur(function(){
+                
+                var username = $(this).val();
+                $.ajax({
+                    
+                    url:"checkuser.php",
+                    method:"POST",
+                    data:{user_name:username},
+                    dataType:"text",
+                    success:function(html)
+                    {
+                        $('#availability').html(html);
+                        
+                        if ($('#availability').text() == "Username not available" || $('#availability').text() == "Username required"){
+                            $('#register_form').submit(function(e){
+                                e.preventDefault();
+                            });
+                        }
+                        
+                    }
+                });
+                
+            });            
+            
+            
+              $('#email').blur(function(){
+                
+                var email = $(this).val();
+                $.ajax({
+                    
+                    url:"checkemail.php",
+                    method:"POST",
+                    data:{email:email},
+                    dataType:"text",
+                    success:function(html)
+                    {
+                        $('#availability_2').html(html);
+                        
+                        if ($('#availability_2').text() == "Email already in use" || $('#availability').text() == "Email required"){
+                            $('#register_form').submit(function(e){
+                                e.preventDefault();
+                            });
+                        }
+                    }
+                });
+                
+            });
+            
+            
+        }); 
+       
+    
+    </script>
+    
+    <body id = "Login_bg">
+       
+        
+        <center>
+                        
+            
+            
+           <div class="container">
+              <h1 class = "animated bounceInLeft">IdeaForest</h1>
+               
+               <img src="hand-holding-leaves.png" class='img-responsive animated slideInUp' style='display:inline' alt='Me' width='100' height='100'>
+               
+              <form class="form-horizontal animated bounceInLeft" role="form" id = "login_form" action="Login.php" method="post">
+                  <br>
+                <div class="form-group">
+                  <label class="control-label col-sm-5" for="name">Username:</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="login_username" placeholder="Enter username" name = "user" required = "">
+                  </div>
+                </div>
+        
+                <div class="form-group">
+                  <label class="control-label col-sm-5" for="pwd">Password:</label>
+                  <div class="col-sm-4">          
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name = "pass">
+                  </div>
+                </div>
+        
+                <div class="form-group">        
+                  <div class="col-sm-offset-1 col-sm-10">
+                    <button type="submit" class="btn btn-default btn-login">Login</button>
+                    <button type="button" class="btn btn-default btn-login" id = "notRegistered">Not Registered?</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+              <div class="container">
+              <form class="form-horizontal animated bounceInLeft" role="form" id = "register_form" style="display:none;" action = "register.php" method="post">
+                  <br>
+                <div class="form-group">
+                  <label class="control-label col-sm-5" for="name">Full Name:</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="fullname" placeholder="Full name" name = "fullname" required = "">
+                  </div>
+                </div>
+                  
+                  
+                   <div class="form-group">
+                  <label class="control-label col-sm-5" for="username">Username:</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="name" placeholder="Enter username" name = "name"><span id = "availability"></span> 
+                  </div>
+                </div>
+                  
+                  
+                  <div class="form-group">
+                  <label class="control-label col-sm-5" for="email">Email:</label>
+                  <div class="col-sm-4">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name = "email"><span id = "availability_2"></span>
+                  </div>
+                </div>
+                  
+                  
+                  
+                <div class="form-group">
+                  <label class="control-label col-sm-5" for="pwd">Password:</label>
+                  <div class="col-sm-4">          
+                    <input type="password" class="form-control" id="passwod" placeholder="Enter password" name = "password" required = "">
+                  </div>
+                </div>
+                  
+                  
+                <div class="form-group">        
+                  <div class="col-sm-offset-1 col-sm-10">
+                    <button type="submit" class="btn btn-default btn-login" id = "im_in">I'm in!</button>
+                    <button type="button" class="btn btn-default btn-login" id = "Registered">Registered?</button>
+                  </div>
+                </div>
+                  
+                  
+              </form>
+            </div>
+            
+        </center>
+    
+    </body>
+
+</html>

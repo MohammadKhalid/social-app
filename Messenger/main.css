@@ -1,0 +1,184 @@
+@font-face{
+    font-family:"JosefinSans-Bold";
+    src:url(JosefinSans-Bold.ttf);
+}
+
+
+html , body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+        background-color: #0D47A1;
+        font-family: 'JosefinSans-Bold', sans-serif;
+        color: white;
+}
+
+.message_banda{
+    font-size: 20px;
+}
+
+#message{
+    width: 500px;
+    font-family: 'JosefinSans-Bold', sans-serif;
+    font-size: 20px;
+     box-shadow: 0 9px 18px rgba(0,0,0,0.16), 0 9px 18px rgba(0,0,0,0.23);
+    resize: none;
+    color: black;
+}
+
+#messages{
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    
+     border: 2px solid white;
+    background-color: white;
+    color: black;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 1vw;
+    resize: none;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.16), 0 9px 18px rgba(0,0,0,0.23);
+}
+
+#input{
+    padding: 10px;
+    margin-left: 40px;
+}
+
+#feedback{
+    display: none;
+}
+
+ .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .navbar-nav  li a:hover {
+      color: black !important;
+      font-size: 30px;
+  }
+
+i{
+    font-size: 30px;
+}
+
+
+.bubble {
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 66px;
+    padding: 2px;
+    background: #1A237E;
+    font-size: 16px;
+    color: white;
+	margin-bottom: 25px;
+    max-width: 300px;
+    text-align: center;
+    word-wrap: break-word;
+    margin-left: -200px;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 18px;
+    border-style: solid;
+    border-width: 15px 11px 0;
+    border-color: #1A237E transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+
+.bubble_2 {
+    position: relative;
+   min-width: 200px;
+    min-height: 66px;
+    display: inline-block;
+    padding: 2px;
+    background-color: #00C853;
+    font-size: 16px;
+    color: white;
+    margin-left: 55%;
+    margin-bottom: 25px;
+    max-width: 300px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+  .bubble_2:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 160px;
+    border-style: solid;
+    border-width: 15px 11px 0;
+    border-color: #00C853 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+input[type=submit]{
+    font-family: 'JosefinSans-Bold', sans-serif;
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    
+     -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+    border: none;
+    
+    border-radius: 0;
+
+    font-size: 1.5vw;
+    margin-top: 4%;
+    
+    width: 15%;
+    height: 10%;
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+}
+
+input[type=submit]:hover{
+    background-color:#283593;
+    color: white;
+}
+
+#send{
+    margin-left: 10px;
+}
+
+#messages::-webkit-scrollbar {
+    width: 12px;
+    background-color: white;
+}
+ 
+#messages::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+}
+ 
+#messages::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+    background-color: #1A237E;
+}
+
+

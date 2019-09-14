@@ -1,0 +1,148 @@
+@font-face{
+    font-family:"k";
+    src:url(k.otf);
+}
+
+ @font-face{
+            font-family:"Roboto-Black";
+            src:url(Roboto-Black.ttf);
+}
+
+body{
+        background-color: white;
+        font-family: 'k', sans-serif;
+        color: black;
+        font-size: 2em;
+        height: 100%;
+}
+
+h1{
+    font-size: 65px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+#quote{
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+}
+
+.actions{
+    background-color: #1565C0;
+}
+
+.bg-1{
+    background-color: #0D47A1;
+    color: white;
+    padding: 100px;
+}
+
+.img-circle{
+    box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+ .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  .navbar-nav  li a:hover {
+      color: black !important;
+      font-size: 30px;
+  }
+
+.btn-default{
+    border-radius: 0;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    color: black;
+}
+
+.btn-login{
+    padding: 15px;
+    font-size: 15px;
+}
+
+#chatbg{
+    background-color: #0D47A1;
+    color: white;
+}
+
+.form-control{
+    font-size: 20px;
+    border-radius: 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btn-default{
+    border-radius: 0;
+    font-family: ;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.btn-default:hover{
+    background-color: #006064;
+    color: white;
+}
+
+i{
+   font-size: 35px;
+   color: grey;
+}
+
+i:hover{
+    color: black;
+}
+
+.green{
+    color: #76FF03;
+}
+
+.navicons{
+    margin-left: 25px;
+}
+
+.home{
+    font-size: 30px;
+}
+
+#update_info{
+    font-size: 20px;
+    color: black;
+    
+}
+
+#manage_bg{
+    background-color: #00ACC1;
+    color: white;
+}
+
+#quotewriter{
+     font-family: 'k', sans-serif;
+}
+
+#profile_bg{
+    background-color: #90A4AE;
+}
+
+.interestedheading{
+    font-size: 55px;
+    margin-top: 50px;
+}
+
+.green_sign{
+    color: chartreuse;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+#Login_bg{
+    background-color: #0D47A1;
+    color: white;
+}
